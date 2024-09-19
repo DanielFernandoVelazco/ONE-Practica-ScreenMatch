@@ -1,6 +1,6 @@
-package com.fernando.screenmatch;
+package com.fernando.screenmatch.modelos;
 
-public class Pelicula {
+public class Titulo {
 
     // Se definen las variables de tipo privado
 
@@ -56,7 +56,7 @@ public class Pelicula {
 
         System.out.println("El nombre de la pelicula es: " + nombre);
         System.out.println("La fecha de lanzamiento es: " + fechaDeLanzamiento);
-        System.out.println("La duracion de la pelicula es: " + duracionEnMinutos);
+        System.out.println("La duracion de la pelicula es: " + getDuracionEnMinutos());
         System.out.println("Se incluye en el plan: " + incluidoEnElPlan);
 
     };

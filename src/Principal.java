@@ -1,4 +1,5 @@
-import com.fernando.screenmatch.Pelicula;
+import com.fernando.screenmatch.modelos.Pelicula;
+import com.fernando.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -17,18 +18,15 @@ public class Principal {
         System.out.println("El total de las evaluaciones es: " + miPelicula.getTotalDeLasEvaluaciones());
         System.out.println("La media de las evaluaciones es: " + miPelicula.calculaMedia());
 
-        /*
-         * 
-         * Pelicula otraPelicula = new Pelicula();
-         * 
-         * otraPelicula.nombre = "Matrix 2";
-         * otraPelicula.fechaDeLanzamiento = 2000;
-         * otraPelicula.duracionEnMinutos = 120;
-         * otraPelicula.incluidoEnElPlan = true;
-         * 
-         * otraPelicula.muestraFichaTecnica();
-         * 
-         */
+        Serie casaDragon = new Serie();
+        casaDragon.setNombre("La Casa Dragon");
+        casaDragon.setFechaDeLanzamiento(2022);
+        casaDragon.setTemporadas(1);
+        casaDragon.setEpisodioPorTemporada(10);
+        casaDragon.setMinutoPorEpisodio(50);
+        casaDragon.muestraFichaTecnica();
+
+        System.out.println(casaDragon.getDuracionEnMinutos());
 
     }
 }
